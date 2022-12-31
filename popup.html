@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+<label for="input">Enter text:</label><br>
+  <form> 
+    <div class="input-container">
+        <input type="text" id="input"><br>
+        <input type="submit" value="Generate Formula">
+    </div>
+  </form>
+  <label for="input">Result Formula:</label><br>
+  <div id="result" maxlength="100"></div>
+  <button id="copy-button" disabled>Copy Formula</button>
+  <button id="regenerate-button" disabled>Regenerate</button>
+  <div id="success-message" style="display: none;">
+    Formula copied to clipboard successfully!
+  </div>
+   <div class="bottom">
+        <p>Google Sheets GPT-3 Extension by Oscar Thanoyannis</p>
+    </div>
+  <script src="popup-ui.js"></script>
+</body>
+
+</footer>
+</html>
